@@ -43,7 +43,7 @@ width= int(input ("Enter approximated width in meters: "))
 #show image taken from camera
 import matplotlib.image as im
 import matplotlib.pyplot as plt
-wall= im.imread("/Users/ddb_000/test.png")
+wall= im.imread("test.png")
 plt.imshow(wall)
 plt.show()
 
@@ -59,7 +59,7 @@ wall.shape
 
 
 #load bed image
-bed= im.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/bed.png")
+bed= im.imread("/projectFurniture/bed.png")
 plt.imshow(bed)
 plt.show()
 
@@ -76,8 +76,8 @@ bed.shape
 
 from PIL import Image
 import cv2
-background = Image.open('/Users/ddb_000/test.png')
-img = cv2.imread("/Users/ddb_000/test.png")
+background = Image.open('test.png')
+img = cv2.imread("test.png")
 #check the difference between cv2.shape and PIL.size
 img.shape
 
@@ -109,7 +109,7 @@ def beds(background_w, background_h, background,bed_height = 2,bed_width = 1.5):
     vertical_ratio, horizontal_ratio= ratio(background_w, background_h, background)
     
     #open bed image with cv2
-    bed= cv2.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/bed.png", 
+    bed= cv2.imread("/projectFurniture/bed.png", 
                     cv2.IMREAD_UNCHANGED)
     
     #get the new sizes basid on background ratio
@@ -122,7 +122,7 @@ def beds(background_w, background_h, background,bed_height = 2,bed_width = 1.5):
     cv2.imwrite("resized_bed.png", bed)
     
     #open the resized image with PIL
-    bed2=Image.open("/Users/ddb_000/resized_bed.png")
+    bed2=Image.open("/resized_bed.png")
     #print(bed2.size)
     
     #shift distance
@@ -147,7 +147,7 @@ def drawers(background_w, background_h, background,drawer_height = 1.4,drawer_wi
     vertical_ratio, horizontal_ratio= ratio(background_w, background_h, background)
     
     #open bed image with cv2
-    drawer= cv2.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/drawers.png", 
+    drawer= cv2.imread("/projectFurniture/drawers.png", 
                     cv2.IMREAD_UNCHANGED)
     
     #get the new sizes basid on background ratio
@@ -160,7 +160,7 @@ def drawers(background_w, background_h, background,drawer_height = 1.4,drawer_wi
     cv2.imwrite("resized_drawer.png", drawer)
     
     #open the resized image with PIL
-    drawer2=Image.open("/Users/ddb_000/resized_drawer.png")
+    drawer2=Image.open("/resized_drawer.png")
     
     #shift distance
     h_distance= 1.7
@@ -184,7 +184,7 @@ def mirrors(background_w, background_h, background, mirror_height=1.2, mirror_wi
     vertical_ratio, horizontal_ratio= ratio(background_w, background_h, background)
     
     #open bed image with cv2
-    mirror= cv2.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/mirror.png", 
+    mirror= cv2.imread("/projectFurniture/mirror.png", 
                     cv2.IMREAD_UNCHANGED)
     
     #get the new sizes basid on background ratio
@@ -197,7 +197,7 @@ def mirrors(background_w, background_h, background, mirror_height=1.2, mirror_wi
     cv2.imwrite("resized_mirror.png", mirror)
     
     #open the resized image with PIL
-    mirror2=Image.open("/Users/ddb_000/resized_mirror.png")
+    mirror2=Image.open("/resized_mirror.png")
     
     h_distance, v_distance= 1,1.5
     #bed location
@@ -221,7 +221,7 @@ def tables(background_w, background_h, background, table_height=0.66, table_widt
     vertical_ratio, horizontal_ratio= ratio(background_w, background_h, background)
     
     #open bed image with cv2
-    table= cv2.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/bedside table.png", 
+    table= cv2.imread("/projectFurniture/bedside table.png", 
                     cv2.IMREAD_UNCHANGED)
     
     #get the new sizes basid on background ratio
@@ -234,7 +234,7 @@ def tables(background_w, background_h, background, table_height=0.66, table_widt
     cv2.imwrite("resized_table.png", table)
     
     #open the resized image with PIL
-    table2=Image.open("/Users/ddb_000/resized_table.png")
+    table2=Image.open("/resized_table.png")
     
     h_distance= 1
     #bed location
@@ -257,7 +257,7 @@ def benchs(background_w, background_h, background, bench_height= 0.6, bench_widt
     vertical_ratio, horizontal_ratio= ratio(background_w, background_h, background)
     
     #open bed image with cv2
-    bench= cv2.imread("/Users/ddb_000/Room-Furnishing/projectFurniture/bench.png", 
+    bench= cv2.imread("/projectFurniture/bench.png", 
                     cv2.IMREAD_UNCHANGED)
     
     #get the new sizes basid on background ratio
@@ -270,7 +270,7 @@ def benchs(background_w, background_h, background, bench_height= 0.6, bench_widt
     cv2.imwrite("resized_bench.png", bench)
     
     #open the resized image with PIL
-    bench2=Image.open("/Users/ddb_000/resized_bench.png")
+    bench2=Image.open("/resized_bench.png")
     
     h_distance= 2.7
     #bed location
