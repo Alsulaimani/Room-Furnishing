@@ -20,28 +20,28 @@
 > ### 2.   **Installing**
 
 >	We need to install and import all required packages & libraries:
-* Opencv2
-*	matplotlib.pyplot
-*	matplotlib.image
-* PIL
-*	pandas
-*	PyQt5
-*	numpy 
-*	graphviz
-* sklearn
+>* Opencv2
+>*	matplotlib.pyplot
+>*	matplotlib.image
+>* PIL
+>*	pandas
+>*	PyQt5
+>*	numpy 
+>*	graphviz
+>* sklearn
 
 > ### 3.   **Application description**
 
 >*   install all packages
-*   open camera
-*   take image of the wall
-*   give approximated dimentions
-*   change furniture size based on the approximated values
-*   concatinate furniture with the wall
-*   creating csv file
-*   collecting user's data
-*   train and test the model
-*   predict output to the user
+>*   open camera
+>*   take image of the wall
+>*   give approximated dimentions
+>*   change furniture size based on the approximated values
+>*   concatinate furniture with the wall
+>*   creating csv file
+>*   collecting user's data
+>*   train and test the model
+>*   predict output to the user
 
 ---
 > ## **Authors**
