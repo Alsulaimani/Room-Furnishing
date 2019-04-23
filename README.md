@@ -13,8 +13,8 @@
 	
 
 >*   You have to install Anaconda
-*   Updated internet browser
-*   Pip version 19
+>*   Updated internet browser
+>*   Pip version 19
 
 
 > ### 2.   **Installing**
@@ -47,7 +47,7 @@
 > ## **Authors**
 
 >*   Asma Al Sulaimani
-*   Amna Al Teneiji
+>*   Amna Al Teneiji
 
  ---
 > ## **Acknowledgment**
